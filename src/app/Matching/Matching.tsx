@@ -20,6 +20,7 @@ const MatchingGame: React.FC = () => {
     setRandomItem(getRandomItem()); // Reset to a new random item
     setMessage(""); // Clear any message
     setIsMatching(false); // Re-enable interactions
+    setSelectedText(null); // Clear any selected text
   }, []);
 
   const handleTextClick = (name: string) => {
